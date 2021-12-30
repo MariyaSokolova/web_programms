@@ -1,0 +1,19 @@
+<html>
+    <head>
+    </head>
+    <body>
+        <script type='text/javascript'>
+            var n = prompt('Введите количество элементов массива, количество должно быть больше 10');
+            var m = [];
+            for (let i = 1; i <= n; i++) {
+                  m[i] = Math.floor(Math.random() * (30 - (-10) + 1)) + (-10);
+                  alert(m[i]);
+                  if (m[i]<0){
+                  	m[i] = m[i]*m[i];
+                  	alert('Значение является отрицательным, возведём его в квадрат: ' + m[i]);
+                  }
+            }
+            document.write('Полученный массив после возведения в квадрат отрицательных чисел: '  + m);
+        </script>
+    </body>
+</html>

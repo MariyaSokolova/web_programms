@@ -1,0 +1,15 @@
+<html>
+    <head>
+    </head>
+    <body>
+        <script type='text/javascript'>
+            let persons = [
+             {name: 'Peter', lk: 'user'},
+             {name: 'Mark', lk: 'admin'},
+             {name: 'Lane', lk: 'user'},
+            ]
+            let adm = persons.filter(person => person.lk == 'admin');  
+            alert(adm[0].name);
+        </script>
+    </body>
+</html>

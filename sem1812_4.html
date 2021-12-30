@@ -1,0 +1,19 @@
+<html>
+    <head>
+    </head>
+    <body>
+        <script type='text/javascript'>
+            // создан массив, в котором хранятся объекты, содержащие свойства об имени и оценки учащегося
+            const data = [
+                {name: "Ann", ball: 5},
+                {name: "Bred", ball: 4},
+                {name: "Grace", ball: 3},
+                {name: "Alex", ball: 5},
+                {name: "Robby", ball: 2}
+            ];
+            // при помощи функции reduce произведён подчёт среднего балла учащегося
+            let avg = data.reduce((r,i) => r + i.ball, 0) / (data.length || 1);
+            alert(avg);
+        </script>
+    </body>
+</html>

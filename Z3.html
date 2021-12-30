@@ -1,0 +1,36 @@
+<html>
+    <head>
+    </head>
+    <body>
+        <script type='text/javascript'>
+            let srzns = 0; 
+            let srznso = 0;
+            let kp = 0;
+            let ko = 0;
+            let knull = 0; 
+            var arr = [];
+            for (let i = 1; i < 16; i++) {
+                  arr[i] = Math.floor(Math.random() * (30 - (-10) + 1)) + (-10);
+                  alert(arr[i]);
+                  if (arr[i] > 0){
+                    srzns = srzns + arr[i];
+                    kp = kp + 1;
+                  }
+                  if (arr[i] < 0){
+                    srznso = srznso + arr[i];
+                    ko = ko + 1;
+                  }
+                  if (arr[i] = 0){
+                    knull = knull + 1;
+                  }
+            }
+            let srzn;
+            srzn = srzns/kp;
+            let srzn2;
+            srzn2 = srznso/ko;
+            alert('Среднее арифметическое положительных случайных числел: ' + srzn);
+            alert('Среднее арифметическое отрицательных случайных числел: ' + srzn2);
+            alert('Количество нулей: ' + knull);
+        </script>
+    </body>
+</html>
